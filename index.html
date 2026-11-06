@@ -25,8 +25,9 @@ h1{margin:0 0 6px;font:800 clamp(22px,4vw,34px) Orbitron,sans-serif;letter-spaci
 button,.btn{cursor:pointer;border:none;border-radius:12px;font:700 18px Rajdhani,sans-serif;letter-spacing:.04em;padding:12px 22px;min-height:50px;background:var(--gold);color:#1B1200;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 button:focus-visible,.btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
 .err{min-height:20px;color:var(--red);font-weight:600;font-size:14px}
-.games{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;width:min(920px,100%)}
-@media (max-width:720px){.games{grid-template-columns:1fr}}
+.games{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;width:min(1240px,100%)}
+.g .ver{display:inline-block;margin-left:8px;padding:2px 9px;border-radius:999px;font-size:12px;letter-spacing:.06em;vertical-align:middle;border:1px solid var(--c);color:var(--c)}
+@media (max-width:1000px){.games{grid-template-columns:1fr}}
 .g{position:relative;border-radius:20px;border:2px solid var(--c);background:linear-gradient(170deg,color-mix(in srgb,var(--c) 14%,#0B1F4A),#06142E 75%);padding:26px 24px 22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 0 34px color-mix(in srgb,var(--c) 22%,transparent)}
 .g .k{font:700 12px Rajdhani,sans-serif;letter-spacing:.2em;color:var(--c)}
 .g h2{margin:0;font:800 22px/1.2 Orbitron,sans-serif;letter-spacing:.04em}
@@ -55,11 +56,21 @@ button:focus-visible,.btn:focus-visible{outline:3px solid #fff;outline-offset:2p
 <main class="games" id="games" hidden>
   <section class="g" style="--c:#FFB703">
     <span class="k">CURSO LIDERAR PARA RESULTADOS</span>
-    <h2>O Enigma dos Resultados</h2>
-    <p>Liderança em jogo: cinco gerências do Instituto de Proteção Social montam o Plano Resposta no Prazo.</p>
+    <h2>O Enigma dos Resultados <span class="ver">VERSÃO 2 · NOVA</span></h2>
+    <p>Versão mais limpa (06/11): letras maiores, etiquetas, busca, pauta das reuniões, etapas do plano, dicas e tour na tela.</p>
     <div class="act">
       <a class="btn" href="enigma/">Abrir o jogo</a>
       <button type="button" class="ln" data-copy="enigma/?papel=jogador">Copiar link dos jogadores</button>
+    </div>
+    <span class="ok" aria-live="polite"></span>
+  </section>
+  <section class="g" style="--c:#9DB6DD">
+    <span class="k">CURSO LIDERAR PARA RESULTADOS · BACKUP</span>
+    <h2>O Enigma dos Resultados <span class="ver">VERSÃO 1</span></h2>
+    <p>Versão anterior, como estava até 06/11, guardada caso seja preciso voltar.</p>
+    <div class="act">
+      <a class="btn" href="enigma-v1/">Abrir o jogo</a>
+      <button type="button" class="ln" data-copy="enigma-v1/?papel=jogador">Copiar link dos jogadores</button>
     </div>
     <span class="ok" aria-live="polite"></span>
   </section>
